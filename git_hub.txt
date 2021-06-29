@@ -1,0 +1,190 @@
+## Git and Git Hub
+Git is version control system that allows one or more person to works on same code base or on the same project.
+where git hub is hosting platform that allows us to host our projrct somewhere on the cloud.
+The git hub is most popular hosting platform for git project.
+But we also have other hosting platform like Bitbucket, Git lab, ASW codecommit.
+
+*******************************************************************
+
+## Git bash installation
+https://git-scm.com/downloads
+
+*******************************************************************
+ 
+## Git signing up 
+https://github.com/
+
+*******************************************************************
+
+### Git Bash terminal commands
+## verify Installation
+git --version
+To verify our installation 
+
+git --help
+To get basic commands we can use in git bash
+
+ctrl+l or clear
+to clear the terminal screen
+
+*******************************************************************
+
+## Git setup
+git config --global user.name "your username"
+To configure our pc to git using user name
+
+git config --global user.email "your@useremail"
+To configure our pc to git using user email
+
+git config --global color.ui.auto 
+This will enables command line colouring output
+
+git config -l
+This will shows the data we have configured.'-l' means list
+
+*********************************************************************
+
+## Git initialization
+mkdir folder_name
+To create folder from terminal itself
+
+cd folder_name/
+To make folder as a current directory
+
+cd ..
+This will use to change current working directory
+
+ls 
+To get list of content in folder 
+
+ls -a
+To get list of all content in folder 
+
+git init . or git init
+To initialize the folder for git.After using this command .git folder is created and our directory becomes master.
+
+rm -rf folder_name
+To remove folder from our directory
+
+*****************************************************************************************************************
+
+## Git add
+touch file_name.extension
+To create a file within terminal itself
+
+git status
+This will shows the status of our working directory.Shows any untrack file or uncommited files.
+
+git add file_name
+To add file to staging area
+
+git add . 
+To add remaining files to staging area 
+
+git add -all
+To add all files to staging area 
+
+git rm --cached file_name
+To remove the file from staging area
+
+git rm -r --cached .
+To remove remaining files from staging area
+
+git rm --cached *
+To remove all files from staging area in one go
+
+**************************************************************************************************
+
+## Git Commit
+git commit -m "message"
+To commit file which are already in staging area. This command use to convey the message as we are making changes in file.
+The commit message contains what changes we have done in files
+
+git log
+It will shows the commit history
+
+git log --oneline
+To get commit data in single line
+
+git show commit_hash
+To get what actually we have commited
+
+vi file_name
+It is used for creating new file if file is not availabel as well as inserting data in it
+
+cat file_name
+It will shows the data of that file
+
+git diff 
+It will shows the difference between current file data and newly update file data
+
+git restore file_name
+If we made changes in particular file but we want old file data back then above command is uesd
+
+***********************************************************************************************************
+
+## Ammend commit
+git commit --amend -m "message"
+If we want to change message of previously commited file the we can use above command.This valid only for latest commit
+
+****************************************************************************************************************
+
+## Git push
+git push -u origin master(main)
+To push our changes to git repo in master branch
+
+git push -u origin branch_name
+To push our changes to git repo in particular branch
+
+git push -f 
+To force push our changes 
+
+****************************************************************************************************************
+
+## Git pull 
+git pull 
+To pull changes made in git repo to our local machine 
+
+****************************************************************************************************************
+
+## Git branch
+git branch 
+To get which branch we are working
+
+git branch -M main
+to change our branch from master to main
+
+git branch -r 
+to get remote branches in our directory
+
+git branch -a 
+To get all the branches in our directory including remote branches
+
+git branch branch_name
+To create new branch. When we are creating a branch it will copy all data from master branch without affecting its data
+
+git checkout branch_name
+To switches the branch 
+
+git checkout -
+To switch back to previous branch 
+
+git checkout -b branch_name
+To create new branch and switched into it
+
+git branch -d branch_name
+To delete branch 
+
+******************************************************************************************************************
+
+## Rebase
+git pull --rebase origin main 
+To pull the changes in main. If conflicts not resolved then we have to solve it manually.
+
+git rebase --continue 
+To check whether the conflicts resolved or not 
+
+
+
+
+ 
